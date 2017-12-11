@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10920803-BBD9-4875-BA1E-0B2A9F987269}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hotel</RootNamespace>
+    <AssemblyName>HotelManagment</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="hotelmanagment-csharp\DecoratorSaltCave.cs" />
+    <Compile Include="hotelmanagment-csharp\DecoratorMassage.cs" />
+    <Compile Include="hotelmanagment-csharp\DecoratorSauna.cs" />
+    <Compile Include="hotelmanagment-csharp\AddNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\AddNews.Designer.cs">
+      <DependentUpon>AddNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\JiPPZ509DataSet1.cs">
+      <DependentUpon>JiPPZ509DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\NewsEmail.cs" />
+    <Compile Include="hotelmanagment-csharp\JiPPZ509DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JiPPZ509DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\PackageReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\PackageReservation.Designer.cs">
+      <DependentUpon>PackageReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\CalculatorDecoration.cs" />
+    <Compile Include="hotelmanagment-csharp\CalculatorSport.cs" />
+    <Compile Include="hotelmanagment-csharp\Calculator.cs" />
+    <Compile Include="hotelmanagment-csharp\NewsSQL.cs" />
+    <Compile Include="hotelmanagment-csharp\ReservationAccommodation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\ReservationAccommodation.Designer.cs">
+      <DependentUpon>ReservationAccommodation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\SeeReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\SeeReservations.Designer.cs">
+      <DependentUpon>SeeReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\StrategyCash.cs" />
+    <Compile Include="hotelmanagment-csharp\News.cs" />
+    <Compile Include="hotelmanagment-csharp\Observer.cs" />
+    <Compile Include="hotelmanagment-csharp\Observed.cs" />
+    <Compile Include="hotelmanagment-csharp\StrategyCard.cs" />
+    <Compile Include="hotelmanagment-csharp\StrategyPrepayment.cs" />
+    <Compile Include="hotelmanagment-csharp\Strategy.cs" />
+    <Compile Include="hotelmanagment-csharp\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmanagment-csharp\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="hotelmanagment-csharp\AddNews.resx">
+      <DependentUpon>AddNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotelmanagment-csharp\PackageReservation.resx">
+      <DependentUpon>PackageReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotelmanagment-csharp\ReservationAccommodation.resx">
+      <DependentUpon>ReservationAccommodation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotelmanagment-csharp\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotelmanagment-csharp\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="hotelmanagment-csharp\SeeReservations.resx">
+      <DependentUpon>SeeReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="hotelmanagment-csharp\JiPPZ509DataSet1.xsc">
+      <DependentUpon>JiPPZ509DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hotelmanagment-csharp\JiPPZ509DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JiPPZ509DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hotelmanagment-csharp\JiPPZ509DataSet1.xss">
+      <DependentUpon>JiPPZ509DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bez tytułu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bez tytułu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

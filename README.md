@@ -1,8 +1,7 @@
 # HotelManagment
 
-HotelManagment is program which allow make and manage a reservation and hotel services.
-
+A program supporting hotel management. Allows users to create and manage hotel reservations and services.
 # Technology
 
-* .NET: C# 5.0, Windows Forms 
-* Database: Microsoft SQL Server
+* .NET: C# 5.0, Windows Forms. 
+* Database: Microsoft SQL Server.

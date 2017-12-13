@@ -14,7 +14,6 @@ namespace Hotel
 {
     public partial class ReservationAccommodation : Form
     {
-       // Kalkulator k = new Kalkulator();
         public ReservationAccommodation()
         {
             InitializeComponent();

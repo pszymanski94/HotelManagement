@@ -1,4 +1,4 @@
-# HotelManagment
+# HotelManagement
 
 A program supporting hotel management. Allows users to create and manage hotel reservations and services.
 # Technology
